@@ -1,73 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
+    <meta charset="UTF-8">
+    <title>Document</title>
 </head>
+
 <body>
-	<script>
-	  // 1.
-	  let name, admin;
-	  name = "John";
-	  admin = name;
-	  alert(admin);
-      
-      // 2.
-      let name = "Illya";
-      alert(`hello ${1}`); //hello 1
-      alert(`hello ${"name"}`); //hello name;
-      alert(`hello ${name}`); //hello Illya
-      
-      // 3.
-      let a = prompt("введите число");
-      if (a > 0) {
-        alert(1);
-      } else if (a < 0) {
-        alert(-1);
-      } else if (a == 0) {
-        alert("" + a);
-      }
-      
-      // 4.
-      let a = prompt("ввод числа");
-      if (a >= 14 && a <= 90) {
-        alert("Ok");
-      }
-      
-      //5 .
-      for (i = 1; i <= 10; i++) {
-        if (i % 2) {
-        } else {
-          alert(i);
+    <script>
+        // 1.
+        let name, admin;
+        name = "John";
+        admin = name;
+        alert(admin);
+
+        // 2.
+        let name = "Illya";
+        alert(`hello ${1}`); //hello 1
+        alert(`hello ${"name"}`); //hello name;
+        alert(`hello ${name}`); //hello Illya
+
+        // 3.
+        let a = prompt("введите число");
+        if (a > 0) {
+            alert(1);
+        } else if (a < 0) {
+            alert(-1);
+        } else if (a == 0) {
+            alert("" + a);
         }
-      }
-      
-      // 6.
-      function min() {
-        let a = prompt("введите a");
-        let b = prompt("введите b");
-        if (a > b) {
-          alert(a);
-        } else alert(b);
-      }
-      // или Math.min
-      min();
-      
-      7.
-      function pow(x, n) {
-        x = prompt();
-        n = prompt();
-        let b = x;
-        for (i = 1; i < n; i++) {
-          b = b * x;
-          // Ну или Math.pow
+
+        // 4.
+        let a = prompt("ввод числа");
+        if (a >= 14 && a <= 90) {
+            alert("Ok");
         }
-        alert(b);
-		}
-		pow();
-	</script>
+
+        //5 .
+        for (i = 1; i <= 10; i++) {
+            if (i % 2) {} else {
+                alert(i);
+            }
+        }
+
+        // 6.
+        function min() {
+            let a = prompt("введите a");
+            let b = prompt("введите b");
+            if (a > b) {
+                alert(a);
+            } else alert(b);
+        }
+        // или Math.min
+        min();
+
+        7.
+
+        function pow(x, n) {
+            x = prompt();
+            n = prompt();
+            let b = x;
+            for (i = 1; i < n; i++) {
+                b = b * x;
+                // Ну или Math.pow
+            }
+            alert(b);
+        }
+        pow();
+    </script>
+    <div>
 </body>
+
 </html>
-
-
-
