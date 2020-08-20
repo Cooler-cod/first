@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //1 задача
+        function sum(a) {
+            return function(b) {
+                return a + b;
+            };
+        }
+        console.log(sum(2)(3));
+
+        //2 задача
+        function MakeCounter() {
+            let counter = 0;
+            return function() {
+                return counter++;
+            };
+        }
+        let counter = MakeCounter();
+        let counter2 = MakeCounter();
+        alert(counter());
+        alert(counter());
+        alert(counter2());
+        alert(counter2());
+        alert(counter());
+
+        //3 задача
+        function sumInput() {
+            let a;
+            let arr = [];
+            while (a !== String) {
+                a = prompt("введите а");
+                sumInput.push(a);
+            }
+            console.log(a);
+        }
+
+        function sum() {
+            let heap = [],
+                tmp;
+            do {
+                tmp = prompt("Введите число", "");
+                if (tmp === "" || tmp === null || isNaN(tmp)) break;
+                heap.push(+tmp);
+            } while (true);
+
+            alert(
+                heap.reduce(function sum(a, b) {
+                    return a + b;
+                })
+            );
+        }
+        sum();
+    </script>
+</body>
+
+</html>
